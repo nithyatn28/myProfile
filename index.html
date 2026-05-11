@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Nithya T N, a passionate full-stack developer specializing in modern web technologies.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body
+    class="font-['Inter'] bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 z-50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#"
+                        class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                        NTN
+                    </a>
+                    
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about"
+                            class="text-gray-700 dark:text-blue-100 hover:text-blue-600 dark:hover:text-cyan-200 px-3 py-2 text-sm font-medium transition-colors duration-200">About</a>
+                        <a href="#projects"
+                            class="text-gray-700 dark:text-blue-100 hover:text-blue-600 dark:hover:text-cyan-200 px-3 py-2 text-sm font-medium transition-colors duration-200">Projects</a>
+                        <a href="#experience"
+                            class="text-gray-700 dark:text-blue-100 hover:text-blue-600 dark:hover:text-cyan-200 px-3 py-2 text-sm font-medium transition-colors duration-200">Experience</a>
+                        <a href="#skills"
+                            class="text-gray-700 dark:text-blue-100 hover:text-blue-600 dark:hover:text-cyan-200 px-3 py-2 text-sm font-medium transition-colors duration-200">Skills</a>
+                        <a href="#contact"
+                            class="text-gray-700 dark:text-blue-100 hover:text-blue-600 dark:hover:text-cyan-200 px-3 py-2 text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle"
+                        class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="theme-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                            </path>
+                        </svg>
+                    </button>
+                    <a href="#contact"
+                        class="hidden md:inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-200 transform hover:scale-105">
+                        Let's Talk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about"
+        class="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div class="max-w-7xl mx-auto md:flex items-center gap-12 md:my-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="text-center lg:text-left">
+                    <div class="mb-6">
+                        <span id="greeting"
+                            class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium mb-4"></span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6"> <span
+                                class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Nithya
+                                T N</span>
+                        </h1>
+                        <div class="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-6">
+                            <span id="typing-text"></span><span class="animate-pulse text-blue-600">|</span>
+                        </div>
+                        <p id="location-message" class="text-lg text-gray-600 dark:text-gray-400 mb-8"></p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <a href="#projects"
+                            class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 transform hover:scale-105 shadow-lg">
+                            View My Work
+                        </a>
+                        <a href="Ni.pdf"
+                            class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 transform hover:scale-105 shadow-lg ">
+                            Download Resume
+                        </a>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/nithyatn28"
+                                class="text-gray-400 hover:text-blue-400 transition-colors inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 transform hover:scale-105 shadow-lg">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div
+                    class="flex flex-wrap justify-center lg:jstify-center gap-6 text-sm text-gray-600 dark:text-gray-400">
+                    <div class="flex items-center">
+                        <span class="text-green-500 mr-2">●</span>
+                        Available for work
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">💻</span>
+                        300+ GitHub commits
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">🎯</span>
+                        5 LeetCode solved
+                    </div>
+                </div>
+                </div>
+
+                <!-- <div
+                    class="flex flex-wrap justify-center  text-sm text-gray-600 dark:text-gray-400">
+                    <div class="flex items-center">
+                        <span class="text-green-500 mr-2">●</span>
+                        Available for work
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">💻</span>
+                        300+ GitHub commits
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">🎯</span>
+                        5 LeetCode solved
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="text-center lg:text-right mb-0 lg:mb-0">
+                <div class="relative inline-block mb-8 lg:mb-0">
+                    <img src="photo1.jpeg" alt="Nithya T N"
+                        class="w-80 h-80 object-cover rounded-full border-4 border-white shadow-lg transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy">
+                    <!-- <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                            <span class="text-white text-2xl">👋</span>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    A showcase of my recent work, featuring full-stack applications built with modern technologies
+                </p>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="mb-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div class="relative">
+                    <input id="project-search" type="text" placeholder="Search projects..."
+                        class="w-80 px-4 py-3 pl-12 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200">
+                    <svg class="absolute left-4 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <select id="project-sort"
+                    class="px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200">
+                    <option value="default">Sort by</option>
+                    <option value="a-z">A - Z</option>
+                    <option value="z-a">Z - A</option>
+                </select>
+            </div>
+
+            <p id="project-count" class="text-center text-gray-600 dark:text-gray-400 mb-8"></p>
+
+            <!-- Filter Tags -->
+            <div id="project-filters" class="flex flex-wrap justify-center gap-3 mb-12">
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+
+            <!-- Recently Viewed -->
+            <div id="recently-viewed-container" class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 hidden">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience"
+        class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Experience & Education
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400">
+                    My journey in software development and continuous learning
+                </p>
+            </div>
+
+            <div id="experience-container" class="space-y-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills"
+        class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 dark:from-blue-800 dark:via-purple-800 dark:to-blue-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Technical Skills</h2>
+                <p class="text-lg text-blue-100">
+                    Technologies and tools I work with to bring ideas to life
+                </p>
+            </div>
+
+            <div id="skills-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-flex items-center justify-center px-4 py-2 mb-6 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-200 text-sm font-semibold">Let’s build something great together</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Contact Me</h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400 mb-10">Have a project, job opportunity, or question? I’m available to collaborate and happy to connect.</p>
+            <button class="modal-trigger inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-base font-semibold rounded-full shadow-xl hover:from-blue-700 hover:to-purple-700 transition duration-300">
+                Send a Message
+            </button>
+        </div>
+    </section>
+
+    <!-- CONTACT MODAL -->
+
+    <button id="modal-trigger" class="modal-trigger fixed bottom-8 right-8 w-16 h-16 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl font-bold">
+        ☏
+    </button>
+
+    <div id="contact-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-md">
+        <div class="flex items-center justify-center min-h-screen p-4">
+
+            <div id="modal-content"
+                class="bg-white w-full max-w-md rounded-2xl shadow-2xl scale-95 opacity-0 transition-all duration-500">
+                <div class="relative p-8">
+                    <h3 class="text-2xl font-bold bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 text-transparent">
+                        Send a Message
+                    </h3>
+
+                    <button id="modal-close"
+                        class="absolute top-6 right-6 text-2xl font-bold hover:text-indigo-500 transition">
+                        ✕
+                    </button>
+                </div>
+
+                <form id="contact-form" class="p-8 space-y-4">
+
+                    <input id="contact-name" type="text" placeholder="Your name" class="w-full rounded-lg px-4 py-3">
+
+                    <input id="contact-email" type="email" placeholder="email@website.com"
+                        class="w-full rounded-lg px-4 py-3">
+
+                    <p id="form-message" class="text-sm text-red-500"></p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+
+                        <button type="button" id="form-cancel"
+                            class="flex-1 font-bold py-4 px-6 rounded-lg border-2 border-gray-300 hover:border-indigo-500 transition">
+                            Cancel
+                        </button>
+
+                        <button type="submit" class="flex-1 font-bold py-4 px-6 rounded-lg text-white transition">
+                            Send Message
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <h3
+                        class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
+                        Nithya T N</h3>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Passionate full-stack developer creating beautiful, functional web applications with modern
+                        technologies.
+                    </p>
+                    <!-- <div class="flex space-x-4">
+                        <a href="https://github.com/nithyatn28"
+                            class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div> -->
+
+                    <!-- Quick Links
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition-colors">About</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-blue-400 transition-colors">Projects</a></li>
+                        <li><a href="#experience" class="text-gray-400 hover:text-blue-400 transition-colors">Experience</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-blue-400 transition-colors">Skills</a></li>
+                    </ul>
+                </div> -->
+
+                    <!-- Contact -->
+                    <!-- <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400">nithya28@gmail.com</li>
+                            <li class="text-gray-400">Available for opportunities</li>
+                        </ul>
+                        <button class="modal-trigger mt-4 inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200">
+                            Get In Touch
+                        </button>
+                    </div> -->
+                </div>
+
+                <!-- <div class="border-t border-gray-800 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-400 text-sm">© 2024 Nithya T N. All rights reserved.</p>
+                        <p class="text-gray-400 text-sm mt-4 md:mt-0">Built with ❤️ using HTML, CSS, JavaScript &
+                            Tailwind
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <button class="modal-trigger fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all duration-300 z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+            </path>
+        </svg>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-24 right-8 p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- MAIN JS ENTRY -->
+    <script src="js/data/projects.js"></script>
+    <script src="js/data/skills.js"></script>
+    <script src="js/data/experience.js"></script>
+    <script src="js/data/Hackthon.js"></script>
+    <script src="js/features/skills-render.js"></script>
+    <script src="js/features/modal.js"></script>
+    <script src="js/features/contact-validation.js"></script>
+    <script src="js/features/theme-toggle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/features/developer-stats.js"></script>
+    <script src="js/features/Experience-render.js"></script>
+    <script src="js/features/Scroll.js"></script>
+    <script src="js/features/ScrollSpy.js"></script>
+    <script src="js/features/back-top.js"></script>
+
+    <script src="js/features/project-search.js"></script>
+    <script src="js/features/Typing-Animation.js"></script>
+    <script src="js/features/Recently-view.js"></script>
+    <script src="js/features/Geolocation.js"></script>
+    <script src="js/features/Dynamic-greeting.js"></script>
+    <script src="js/features/Project-result.js"></script>
+</body>
+
+</html>
