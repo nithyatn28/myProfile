@@ -3,7 +3,7 @@
     --primary-color: #3b82f6;
     --secondary-color: #8b5cf6;
     --accent-color: #06b6d4;
-    --dark-bg: #111827;
+    --dark-bg: #2d3548;
     --dark-secondary: #1f2937;
     --light-text: #f9fafb;
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 .dark-mode #about {
-    background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%);
+    background: linear-gradient(135deg, #1e2532 0%, #25354b 50%, #525c6f 100%);
 }
 
 /* ========== PROJECTS SECTION ========== */
@@ -50,7 +50,7 @@ nav {
 }
 
 .dark-mode #projects-container > div {
-    background: rgba(131, 170, 224, 0.95);
+    background: rgba(81, 128, 157, 0.833);
     border-color: #374151;
 }
 
@@ -69,18 +69,18 @@ nav {
 }
 
 #experience-container > div:hover {
-    background: white;
+    background: rgba(255, 255, 255, 0.61);
     box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
     border-left-color: #8b5cf6;
 }
 
 .dark-mode #experience-container > div {
-    background:rgba(131, 170, 224, 0.95);;
+    background:rgba(81, 128, 157, 0.833);
     border-left-color: #3b82f6;
 }
 
 .dark-mode #experience-container > div:hover {
-    background: #67e88e;
+    background: #6eec94;
 }
 
 /* ========== SKILLS SECTION ========== */
@@ -102,7 +102,7 @@ nav {
 }
 
 .dark-mode #skills-container > div {
-    background: rgba(131, 170, 224, 0.95);
+    background: rgba(81, 128, 157, 0.833);
     border-color: rgba(75, 85, 99, 0.3);
 }
 

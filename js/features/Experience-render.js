@@ -12,7 +12,7 @@ function ExperienceView(){
 
         // Timeline dot
         const timelineDot = document.createElement("div");
-        timelineDot.className = "absolute left-0 top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-800 shadow-md";
+        timelineDot.className = "absolute left-0 top-0 w-4 h-4 bg-red-600 rounded-full border-4 border-white dark:border-gray-800 shadow-md";
         card.appendChild(timelineDot);
 
         // Timeline line (except for last item)
@@ -33,18 +33,18 @@ function ExperienceView(){
         title.textContent = experience.study;
 
         const score = document.createElement("span");
-        score.className = "text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-3 py-1 rounded-full";
+        score.className = "text-sm font-semibold text-blue-600 dark:text-white-400 bg-blue-50 dark:bg-blue-900/30 px-3 py-1 rounded-full";
         score.textContent = experience.CGPA;
 
         header.appendChild(title);
         header.appendChild(score);
 
         const institution = document.createElement("p");
-        institution.className = "text-lg text-gray-600 dark:text-gray-400 font-medium mb-2";
+        institution.className = "text-lg text-gray-900 dark:text-gray-900 font-medium mb-2";
         institution.textContent = experience.college;
 
         const type = document.createElement("p");
-        type.className = "text-sm text-gray-500 dark:text-gray-500 uppercase tracking-wide";
+        type.className = "text-sm text-gray-900 dark:text-gray-900 uppercase tracking-wide";
         type.textContent = experience.label;
 
         content.appendChild(header);

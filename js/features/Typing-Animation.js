@@ -2,7 +2,7 @@ function initTypingAnimation() {
     const typingText = document.getElementById("typing-text");
     if (!typingText) return;
 
-    const roles = ["Software-Trainee", "MERN enthusiast", "Competitive Programmer"];
+    const roles = ["Software-Developer", "MERN Full-Stack Developer", "Competitive Programmer"];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -14,7 +14,7 @@ function initTypingAnimation() {
         if (isDeleting) {
             typingText.textContent = currentRole.substring(0, charIndex - 1);
             charIndex--;
-            typingDelay = 75; // slower when deleting
+            typingDelay = 150; // slower when deleting
         } else {
             typingText.textContent = currentRole.substring(0, charIndex + 1);
             charIndex++;
@@ -34,6 +34,6 @@ function initTypingAnimation() {
     }
 
     // Start typing
-    setTimeout(type, 1000);
+    setTimeout(type, 3000);
 }
 initTypingAnimation();

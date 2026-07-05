@@ -4,7 +4,7 @@ const experiencesData = [
     label: "VTU",
     college:"CIT Mandya",
     study:"B.E in computer science(2022-2026)",
-    CGPA:"CGPA:8.6"
+    CGPA:"CGPA:8.72"
   },
   {
     id: 2,
